@@ -1,0 +1,25 @@
+/*=======================Section 1========================*/
+.section1{
+    display: flex;
+}
+.section1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding : 5rem;
+    h2{
+        margin: 0;
+        color :$very-dark-desaturated-blue ;
+    }
+    p{
+        margin : 1.75rem 0;
+        color : $grayish-blue;
+    }
+    
+
+}
+.section1-img{
+    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+}

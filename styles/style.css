@@ -3,7 +3,7 @@
 /*===========Fonts============*/
 /*============color=============*/
 header {
-  background-image: url(/images/desktop/image-header.jpg);
+  background: url(/images/desktop/image-header.jpg) no-repeat center;
   background-size: cover;
   color: white;
   height: 100vh;
@@ -67,6 +67,44 @@ header div {
           align-items: center;
 }
 
+/*=======================Section 1========================*/
+.section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section1-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5rem;
+}
+
+.section1-content h2 {
+  margin: 0;
+  color: #23303e;
+}
+
+.section1-content p {
+  margin: 1.75rem 0;
+  color: #a7abae;
+}
+
+.section1-img {
+  background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+}
+
 html {
   font-size: 18px;
   -webkit-box-sizing: border-box;
@@ -80,5 +118,12 @@ body {
 
 h1, h2, h3 {
   font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+a:link, a:hover, a:after, a:before, a:visited, a:active {
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  color: #23303e;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 @import "./font-and-color";
 @import "./header";
+@import "./section123";
 html{
     font-size : 18px;
     box-sizing: border-box;
@@ -12,4 +13,10 @@ body{
 }
 h1,h2,h3{
     font-family: $font-heading;
+    font-weight: 900;
+}
+a:link,a:hover,a:after,a:before,a:visited,a:active{
+    text-decoration: none;
+    font-family: $font-heading;
+    color : $very-dark-desaturated-blue ;
 }
