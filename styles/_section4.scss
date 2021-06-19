@@ -1,0 +1,40 @@
+.section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 9rem 5rem;
+    h4{
+        margin-bottom: 4rem;
+        letter-spacing: 5px;
+        color : $grayish-blue;
+    }
+    .profiles{
+        display: flex;
+    }
+    .profile1,.profile2,.profile3{
+        text-align: center;
+        margin: 1.5rem;
+        p{
+            width: 350px;
+            color :$very-dark-grayish-blue;
+            
+
+        }
+        img{
+            margin-bottom: 4rem;
+            width: 90px;
+            border-radius: 50px;
+         
+        }
+        .name{
+            margin-top :4rem;
+            p{
+                color : $grayish-blue;
+                font-size: 0.75rem;
+            }
+
+        }
+    }
+}

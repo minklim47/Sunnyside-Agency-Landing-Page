@@ -221,7 +221,7 @@ header div.header-content {
 }
 
 .section3-content1 p {
-  margin: 2rem 7rem;
+  margin: 2rem 6rem;
   text-align: center;
 }
 
@@ -249,8 +249,128 @@ header div.header-content {
 }
 
 .section3-content2 p {
-  margin: 2rem 7rem;
+  margin: 2rem 6rem;
   text-align: center;
+}
+
+.section4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9rem 5rem;
+}
+
+.section4 h4 {
+  margin-bottom: 4rem;
+  letter-spacing: 5px;
+  color: #a7abae;
+}
+
+.section4 .profiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section4 .profile1, .section4 .profile2, .section4 .profile3 {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.section4 .profile1 p, .section4 .profile2 p, .section4 .profile3 p {
+  width: 350px;
+  color: #5a636c;
+}
+
+.section4 .profile1 img, .section4 .profile2 img, .section4 .profile3 img {
+  margin-bottom: 4rem;
+  width: 90px;
+  border-radius: 50px;
+}
+
+.section4 .profile1 .name, .section4 .profile2 .name, .section4 .profile3 .name {
+  margin-top: 4rem;
+}
+
+.section4 .profile1 .name p, .section4 .profile2 .name p, .section4 .profile3 .name p {
+  color: #a7abae;
+  font-size: 0.75rem;
+}
+
+.section5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section5 img {
+  width: 25%;
+  min-width: 200px;
+}
+
+.section6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+  background-color: #98cdc2;
+}
+
+.section6 #logo-bottom {
+  -webkit-filter: invert(46%) sepia(15%) saturate(1108%) hue-rotate(118deg) brightness(103%) contrast(90%);
+          filter: invert(46%) sepia(15%) saturate(1108%) hue-rotate(118deg) brightness(103%) contrast(90%);
+}
+
+.nav-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav-bottom a {
+  margin: 1.5rem;
+  color: #458c7e;
+  font-family: "Barlow", sans-serif;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.social-media a {
+  margin: 1rem;
 }
 
 * {
@@ -258,6 +378,7 @@ header div.header-content {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  line-height: 1.75rem;
 }
 
 html {
@@ -269,14 +390,12 @@ body {
   font-weight: 600;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   font-family: "Fraunces", serif;
   font-weight: 900;
 }
 
 a:link, a:hover, a:after, a:before, a:visited, a:active {
   text-decoration: none;
-  font-family: "Fraunces", serif;
-  color: #23303e;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+.section6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 5rem;
+    background-color:hsl(168, 34%, 70%) ;
+    #logo-bottom{
+        filter: invert(46%) sepia(15%) saturate(1108%) hue-rotate(118deg) brightness(103%) contrast(90%);
+    }
+    
+}
+.nav-bottom{
+    display: flex;
+    flex-direction: row;
+    a{
+        margin: 1.5rem;
+        color : $dark-moderate-cyan;
+        font-family: $font-content;
+    }
+    
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    margin-top :2rem;
+    margin-bottom: 0;
+    a{
+        margin:1rem;
+    }
+   
+}

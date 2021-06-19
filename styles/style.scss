@@ -4,10 +4,13 @@
 @import "./section2";
 @import "./section3";
 @import "./section4";
+@import "./section5";
+@import "./section6";
 *{
     padding : 0;
     margin: 0;
     box-sizing: border-box;
+    line-height: 1.75rem;
 }
 html{
     font-size : 18px;
@@ -17,12 +20,12 @@ body{
     font-family: $font-content;
     font-weight: 600 ;
 }
-h1,h2,h3{
+h1,h2,h3,h4,h5{
     font-family: $font-heading;
     font-weight: 900;
 }
 a:link,a:hover,a:after,a:before,a:visited,a:active{
     text-decoration: none;
-    font-family: $font-heading;
-    color : $very-dark-desaturated-blue ;
+    
+   
 }
