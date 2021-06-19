@@ -1,13 +1,17 @@
 header{
-    background: url(/images/desktop/image-header.jpg) no-repeat center ;
+    background: url(/images/desktop/image-header.jpg) ;
+    background-position: center;
     background-size : cover;
+    background-repeat: no-repeat;
     color : $white;
 
+    margin :0;
+    padding: 2rem 0 ;
     height: 100vh;
+    width: 100vw;
     nav{
         display: flex;
         justify-content: space-between;
-        
         margin : 0 3rem;
         img{
             align-self: center;
@@ -19,7 +23,6 @@ header{
     li{
         display: inline;
         margin: 0 1rem;
-    
     }
     button{
         font-family: $font-heading;
@@ -28,10 +31,8 @@ header{
         padding: 1rem 1.5rem;
         &:hover{
             background-color: rgba($color: #FFFFFF, $alpha: 0.5);
-            color : $white;
-            
+            color : $white; 
         }
-
     }
     h1{
         font-weight: 900;
@@ -39,11 +40,16 @@ header{
         font-family: $font-heading;
         letter-spacing: 5px;
         margin : 5rem;
+        text-align: center;
     }
-    div{
+    div.header-content{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 }
+
+
+ 
 

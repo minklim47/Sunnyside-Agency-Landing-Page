@@ -1,0 +1,42 @@
+.section3{
+    display: flex;
+    justify-content: flex-end;
+}
+.section3-content1{
+    background: url(/images/desktop/image-graphic-design.jpg) ;
+    background-position: center;
+    background-size : cover;
+    background-repeat: no-repeat;
+    color : $dark-desturated-cyan ;
+
+    width: 50%;
+    height: 600px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    p{
+        margin: 2rem 7rem;
+        text-align: center;
+    }
+}
+.section3-content2{
+    background: url(/images/desktop/image-photography.jpg) ;
+    background-position: center;
+    background-size : cover;
+    background-repeat: no-repeat;
+    color :$dark-blue;
+    width: 50%;
+    height: 600px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    p{
+        margin: 2rem 7rem;
+        text-align: center;
+    }
+    
+}

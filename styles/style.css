@@ -3,10 +3,15 @@
 /*===========Fonts============*/
 /*============color=============*/
 header {
-  background: url(/images/desktop/image-header.jpg) no-repeat center;
+  background: url(/images/desktop/image-header.jpg);
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   color: white;
+  margin: 0;
+  padding: 2rem 0;
   height: 100vh;
+  width: 100vw;
 }
 
 header nav {
@@ -52,9 +57,10 @@ header h1 {
   font-family: "Fraunces", serif;
   letter-spacing: 5px;
   margin: 5rem;
+  text-align: center;
 }
 
-header div {
+header div.header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,6 +71,9 @@ header div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*=======================Section 1========================*/
@@ -72,6 +81,8 @@ header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
 }
 
 .section1-content {
@@ -88,12 +99,14 @@ header div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 5rem;
+  width: 50%;
+  padding: 4rem 5rem;
 }
 
 .section1-content h2 {
   margin: 0;
   color: #23303e;
+  font-size: 2rem;
 }
 
 .section1-content p {
@@ -101,14 +114,154 @@ header div {
   color: #a7abae;
 }
 
+.section1-content a {
+  font-weight: 900;
+}
+
 .section1-img {
-  background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+  width: 50%;
+  height: 600px;
+}
+
+.section1-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/*=======================Section 1========================*/
+.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+}
+
+.section2-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  padding: 4rem 5rem;
+}
+
+.section2-content h2 {
+  margin: 0;
+  color: #23303e;
+  font-size: 2rem;
+}
+
+.section2-content p {
+  margin: 1.75rem 0;
+  color: #a7abae;
+}
+
+.section2-content a {
+  font-weight: 900;
+}
+
+.section2-img {
+  width: 50%;
+  height: 600px;
+}
+
+.section2-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section3-content1 {
+  background: url(/images/desktop/image-graphic-design.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #25564b;
+  width: 50%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section3-content1 p {
+  margin: 2rem 7rem;
+  text-align: center;
+}
+
+.section3-content2 {
+  background: url(/images/desktop/image-photography.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #19536b;
+  width: 50%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section3-content2 p {
+  margin: 2rem 7rem;
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
   font-size: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
