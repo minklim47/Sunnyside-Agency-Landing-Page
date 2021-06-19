@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+/*===========Fonts============*/
+/*============color=============*/
+header {
+  background-image: url(/images/desktop/image-header.jpg);
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 3rem;
+}
+
+header nav img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+header button {
+  font-family: "Fraunces", serif;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 1.5rem;
+}
+
+header button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  letter-spacing: 5px;
+  margin: 5rem;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html {
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", serif;
+}
+/*# sourceMappingURL=style.css.map */

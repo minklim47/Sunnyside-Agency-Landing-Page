@@ -1,0 +1,48 @@
+header{
+    background-image: url(/images/desktop/image-header.jpg) ;
+    background-size : cover;
+    color : $white;
+
+    height: 100vh;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        
+        margin : 0 3rem;
+        img{
+            align-self: center;
+        }
+    }
+    ul{
+        list-style-type: none;
+    }
+    li{
+        display: inline;
+        margin: 0 1rem;
+    
+    }
+    button{
+        font-family: $font-heading;
+        border: none;
+        border-radius: 30px;
+        padding: 1rem 1.5rem;
+        &:hover{
+            background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+            color : $white;
+        }
+
+    }
+    h1{
+        font-weight: 900;
+        font-size : 3rem;
+        font-family: $font-heading;
+        letter-spacing: 5px;
+        margin : 5rem;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
