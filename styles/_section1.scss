@@ -25,14 +25,12 @@
         font-family: $font-heading;
         color : $very-dark-desaturated-blue;
         text-decoration: none;    
-      
     }
-    
 }
 .section1-img{
     
     width: 50%;
-    height: 600px;
+    
     
     img{
         width: 100%;
@@ -40,6 +38,32 @@
         object-fit: cover;
         object-position:center;
 
+    }
+
+}
+@media only screen and (max-width : 800px) {
+    .section1{
+        flex-direction: column-reverse;
+        
+        
+    }
+    .section1-content{
+        width: 100%;
+        padding : 4rem 2rem;
+        align-items: center;
+        text-align: center;
+       
+    
+    }
+    .section1-img{
+        width: 100%;
+        img{
+          
+            width: 100%;
+            object-fit: contain;
+            background-repeat: no-repeat;
+        }
+        
     }
 
 }

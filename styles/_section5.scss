@@ -2,6 +2,21 @@
     display : flex;
     img{
         width: 25%;
-        min-width: 200px;
+       
     }
+}
+@media only screen and (max-width : 800px) {
+    .section5{
+        flex-wrap: wrap;
+        
+        img{
+            width: 50%;
+            
+        }
+       
+    }
+      
+    
+        
+
 }

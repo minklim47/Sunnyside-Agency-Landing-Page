@@ -122,7 +122,7 @@ header .hamburger {
     cursor: pointer;
   }
   header h1 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -173,7 +173,6 @@ header .hamburger {
 
 .section1-img {
   width: 50%;
-  height: 600px;
 }
 
 .section1-img img {
@@ -183,6 +182,32 @@ header .hamburger {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .section1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .section1-content {
+    width: 100%;
+    padding: 4rem 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .section1-img {
+    width: 100%;
+  }
+  .section1-img img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 /*=======================Section 1========================*/
@@ -227,11 +252,11 @@ header .hamburger {
   font-weight: 900;
   font-family: "Fraunces", serif;
   color: #23303e;
+  text-decoration: none;
 }
 
 .section2-img {
   width: 50%;
-  height: 600px;
 }
 
 .section2-img img {
@@ -241,6 +266,32 @@ header .hamburger {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .section2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section2-content {
+    width: 100%;
+    padding: 4rem 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .section2-img {
+    width: 100%;
+  }
+  .section2-img img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .section3 {
@@ -308,6 +359,31 @@ header .hamburger {
   text-align: center;
 }
 
+@media only screen and (max-width: 800px) {
+  .section3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section3-content1 {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .section3-content1 p {
+    margin: 2rem 2rem;
+  }
+  .section3-content2 {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .section3-content2 p {
+    margin: 2rem 2rem;
+  }
+}
+
 .section4 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,6 +439,33 @@ header .hamburger {
   font-size: 0.75rem;
 }
 
+@media only screen and (max-width: 800px) {
+  .section4 {
+    width: 100%;
+    padding: 6rem 0rem;
+    text-align: center;
+  }
+  .profiles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem 0rem;
+    padding-top: 0;
+  }
+  h4 {
+    margin: 2rem 0.25rem;
+    letter-spacing: 5px;
+    color: #a7abae;
+  }
+}
+
 .section5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,7 +474,16 @@ header .hamburger {
 
 .section5 img {
   width: 25%;
-  min-width: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  .section5 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section5 img {
+    width: 50%;
+  }
 }
 
 .section6 {
@@ -390,6 +502,7 @@ header .hamburger {
           align-items: center;
   padding: 5rem;
   background-color: #98cdc2;
+  overflow: hidden;
 }
 
 .section6 #logo-bottom {
