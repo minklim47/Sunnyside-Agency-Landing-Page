@@ -21,12 +21,16 @@
 
     <nav class = "nav-bar">
       <img src="/images/logo.svg" alt = "logo">
-      <ul>
+      <div class = "hamburger" id = "hamburger">
+        <img class = "lines" src = "/images/icon-hamburger.svg"alt ="">
+      </div>
+      <ul class = "nav-links" id = "nav-links">
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Projects</a></li>
         <li><button>CONTACT</button></li>
       </ul>
+      
     </nav>
     <div class = "header-content">
       <h1>WE ARE CREATIVES</h1>
@@ -39,7 +43,9 @@
       <h2>Transform your brand</h2>
       <p> We are a full-service creative agency specializing in helping brands grow fast. 
         Engage your clients through compelling visuals that do most of the marketing for you.</p>
-      <a href = "#">LEARN MORE</a>
+      <div class = "underline">
+        <a  href = "#">LEARN MORE</a>
+      </div>
     </div>
     <div class = "section1-img">
       <img src="/images/desktop/image-transform.jpg" alt = "a white egg">
@@ -156,10 +162,11 @@
 
   </section>
 
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Chanakarn Limprasertsiri</a>.
   </div>
+
+  <script src = "/script.js"></script>
 </body>
 </html>

@@ -9,26 +9,36 @@ header{
     padding: 2rem 0 ;
     height: 100vh;
     width: 100vw;
-    nav{
+    .nav-bar{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        margin : 0 3rem;
+        align-items: center;
+        padding : 0 3rem;
         img{
             align-self: center;
         }
     }
-    ul{
+    .nav-links{
+        display : flex;
         list-style-type: none;
-    }
-    li{
+        justify-content: space-around;
+        align-items: center;
+        li{
         display: inline;
         margin: 0 1rem;
+        a{
+            color : $white;
+            text-decoration: none;
+        }
+    }
     }
     button{
         font-family: $font-heading;
         border: none;
         border-radius: 30px;
         padding: 1rem 1.5rem;
+        cursor: pointer;
         &:hover{
             background-color: rgba($color: #FFFFFF, $alpha: 0.5);
             color : $white; 
@@ -41,6 +51,8 @@ header{
         letter-spacing: 5px;
         margin : 5rem;
         text-align: center;
+        line-height: 3rem;
+        
     }
     div.header-content{
         display: flex;
@@ -48,8 +60,47 @@ header{
         align-items: center;
         justify-content: center;
     }
+    .hamburger{
+        display: none;
+    }
+   
 }
 
+@media only screen and (max-width : 800px) {
+    header{
+        .nav-links{
+            display: none;
+            flex-direction:  column;
+            width: 100%;
+           
+        
+        }
+        .nav-links.show{
+            display: flex;
+            position: absolute;
+            left : 0;
+            margin-top: 100px;
+            
+        
+            
+
+        }
+        
+        .hamburger{
+            display :block ;
+            cursor: pointer;
+           
+        }
+        
+        h1{
+            font-size: 1rem;
+        }
+
+    }
+    
+    
+
+}
 
  
 
