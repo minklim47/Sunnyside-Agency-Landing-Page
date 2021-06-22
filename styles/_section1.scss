@@ -24,8 +24,30 @@
         font-weight: 900;
         font-family: $font-heading;
         color : $very-dark-desaturated-blue;
-        text-decoration: none;    
+        text-decoration: none;
+        
+        
     }
+    .underline::after{
+        position: relative;
+        content: '';
+        display: block;
+        width: 120%;
+        height: 12px;
+        top: -30px;
+        transform: translateY(1.3em) translateX(-7%);
+        z-index: -1;
+        border-radius: 50vw;
+        opacity: 30%;
+        background-color: $yellow;
+          
+    }
+    .underline:hover::after{
+        opacity : 100%;
+    }
+    
+    
+    
 }
 .section1-img{
     
@@ -49,9 +71,10 @@
     }
     .section1-content{
         width: 100%;
-        padding : 4rem 2rem;
+        padding : 8rem 2rem;
         align-items: center;
         text-align: center;
+        
        
     
     }

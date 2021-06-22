@@ -37,7 +37,7 @@ header{
         font-family: $font-heading;
         border: none;
         border-radius: 30px;
-        padding: 1rem 1.5rem;
+        padding: 0.75rem 1.5rem;
         cursor: pointer;
         &:hover{
             background-color: rgba($color: #FFFFFF, $alpha: 0.5);
@@ -61,12 +61,14 @@ header{
         justify-content: center;
     }
     .hamburger{
+        
         display: none;
     }
 }
 
 @media only screen and (max-width : 800px) {
     header{
+        
         .nav-links{
             display: none;
             flex-direction:  column;
@@ -75,14 +77,48 @@ header{
         .nav-links.show{
             display: flex;
             position: absolute;
-            left : 0;
-            margin-top: 100px; 
+            background-color: $white;
+            border-style: solid;
+            width:  80%;
+            
+
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            top:0;
+            margin-top: 8rem;
+           
+        
+            button{
+                background-color: $yellow;
+            }
+            li{
+                margin: 1rem;
+            }
+            a{
+                color:$very-dark-grayish-blue;
+            }
+            ::after{
+                content: "";
+                position: absolute;
+                top: -29px;
+                right: -3px;
+                width: 0;
+                height: 0;
+                border-bottom: 30px solid $white;
+                border-left: 30px solid transparent;
+            }
+
+
         }
+        
         .hamburger{
             display :block ;
             cursor: pointer;
+            z-index: 100;
+           
         }
-        
         h1{
             font-size: 2rem;
         }

@@ -61,7 +61,7 @@ header button {
   font-family: "Fraunces", serif;
   border: none;
   border-radius: 30px;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   cursor: pointer;
 }
 
@@ -114,12 +114,39 @@ header .hamburger {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
+    background-color: white;
+    border-style: solid;
+    width: 80%;
     left: 0;
-    margin-top: 100px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    margin-top: 8rem;
+  }
+  header .nav-links.show button {
+    background-color: #fad400;
+  }
+  header .nav-links.show li {
+    margin: 1rem;
+  }
+  header .nav-links.show a {
+    color: #5a636c;
+  }
+  header .nav-links.show ::after {
+    content: "";
+    position: absolute;
+    top: -29px;
+    right: -3px;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid white;
+    border-left: 30px solid transparent;
   }
   header .hamburger {
     display: block;
     cursor: pointer;
+    z-index: 100;
   }
   header h1 {
     font-size: 2rem;
@@ -171,6 +198,25 @@ header .hamburger {
   text-decoration: none;
 }
 
+.section1-content .underline::after {
+  position: relative;
+  content: '';
+  display: block;
+  width: 120%;
+  height: 12px;
+  top: -30px;
+  -webkit-transform: translateY(1.3em) translateX(-7%);
+          transform: translateY(1.3em) translateX(-7%);
+  z-index: -1;
+  border-radius: 50vw;
+  opacity: 30%;
+  background-color: #fad400;
+}
+
+.section1-content .underline:hover::after {
+  opacity: 100%;
+}
+
 .section1-img {
   width: 50%;
 }
@@ -193,7 +239,7 @@ header .hamburger {
   }
   .section1-content {
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -255,6 +301,25 @@ header .hamburger {
   text-decoration: none;
 }
 
+.section2-content .underline::after {
+  position: relative;
+  content: '';
+  display: block;
+  width: 120%;
+  height: 12px;
+  top: -30px;
+  -webkit-transform: translateY(1.3em) translateX(-7%);
+          transform: translateY(1.3em) translateX(-7%);
+  z-index: -1;
+  border-radius: 50vw;
+  opacity: 30%;
+  background-color: #fe7867;
+}
+
+.section2-content .underline:hover::after {
+  opacity: 100%;
+}
+
 .section2-img {
   width: 50%;
 }
@@ -277,7 +342,7 @@ header .hamburger {
   }
   .section2-content {
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
